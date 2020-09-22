@@ -1,8 +1,17 @@
-const btn = document.querySelector(`#clicker`);
+const btn = document.querySelector('button')
 
-btn.onclick=function () {
-    console.log('clicked');
-}
-btn.ondblclick=function () {
-    console.log('double');
-}
+btn.addEventListener("click", function () {
+    alert("clicked");
+});
+
+btn.addEventListener("mouseover", function () {
+    btn.innerText = "stop hovering";
+});
+btn.addEventListener("mouseout", function () {
+    btn.innerText = "Click me";
+});
+
+window.addEventListener('scroll',function () {
+    console.log("stop scrolling");
+
+});
